@@ -1,0 +1,25 @@
+{
+  "name": "about-me",
+  "version": "0.0.0",
+  "description": "元兒～線上履歷",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chyuaner/about-me.git"
+  },
+  "author": "Yuan Chiu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chyuaner/about-me/issues"
+  },
+  "homepage": "https://github.com/chyuaner/about-me",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
