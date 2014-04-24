@@ -1,9 +1,11 @@
 @mixin box-wapper() {
   overflow: hidden;
+
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
+
 }
 
 html, body {
@@ -29,12 +31,30 @@ header {
 
 section {
   @include box-wapper();
+
+  h2~* {
+    @extend .row;
+  }
+}
+
+#skill {
+  /*div:nth-child(1):before {
+    @extend .row;
+  }
+
+  div:nth-last-child(3) {
+    @extend .large-5;
+  }
+
+  div:nth-last-child(-n+2) {
+    @extend .large-2;
+  }*/
 }
 
 footer {
   @include box-wapper();
 
-  ::before {
+  .col:nth-child(1):before {
     @extend .row;
   }
 

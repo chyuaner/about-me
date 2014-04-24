@@ -1,3 +1,11 @@
+h2 {
+  margin-bottom: 1.3em;
+  font-size: rem-calc(40);
+}
+h4 {
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+}
 
 
 header {
@@ -20,6 +28,12 @@ header {
     .contact-github::before { content: "Github: "; }
     .contact-plurk::before { content: "Plurk: "; }
     .contact-skype::before { content: "Skype: "; }
+  }
+}
+
+#skill {
+  li {
+    list-style-position: inside;
   }
 }
 
