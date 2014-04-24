@@ -1,0 +1,30 @@
+
+
+header {
+  h1 {
+    text-align: center;
+    font-size: 4.6em;
+  }
+  h1 .name-en {
+    font-size: 0.7em;
+    font-style: italic;
+    color: gray;
+  }
+
+  #contact-list {
+    width: 55em; 
+
+    .contact-tel::before { content: "Tel: "; }
+    .contact-email::before { content: "Email: "; }
+    .contact-website::before { content: "Website: "; }
+    .contact-github::before { content: "Github: "; }
+    .contact-plurk::before { content: "Plurk: "; }
+    .contact-skype::before { content: "Skype: "; }
+  }
+}
+
+footer {
+  h3 {
+    color: white;
+  }
+}

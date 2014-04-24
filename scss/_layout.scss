@@ -1,0 +1,45 @@
+@mixin box-wapper() {
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+html, body {
+  padding: 0;
+}
+
+header {
+  @include box-wapper();
+
+  #contact-list {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+
+    ul {
+      column-count: 2;
+      column-gap: 20px;
+      -moz-column-count: 2;
+      -moz-column-gap: 20px;
+    }
+  }
+}
+
+section {
+  @include box-wapper();
+}
+
+footer {
+  @include box-wapper();
+
+  ::before {
+    @extend .row;
+  }
+
+  .col {
+    @extend .large-4;
+    @extend .columns;
+  }
+}
