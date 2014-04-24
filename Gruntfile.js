@@ -16,19 +16,29 @@ module.exports = function(grunt) {
       }
     },
 
-    watch: {
-      grunt: { files: ['Gruntfile.js'] },
+    connect: {
+			server: {
+				options: {
+				    hostname: '*'
+				}
+			}
+		},
 
-      sass: {
-        files: 'scss/**/*.scss',
-        tasks: ['sass']
-      }
+    watch: {
+      livereload: {
+				files: ['scss/*.scss','*.html'],
+				tasks: ['sass'],
+				options: {
+					livereload: true
+				}
+			}
     }
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['build','watch']);
+  grunt.registerTask('default', ['build','connect','watch']);
 }
