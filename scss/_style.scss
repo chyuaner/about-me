@@ -7,6 +7,29 @@ header {
   }
 }
 
+sectionLnth-child(even) {
+  background-color: #FAFAFA;
+}
+
+section:nth-child(odd) {
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+  background-color: #EFEFEF;
+}
+
+#skill {
+}
+
+#join {
+  #join-moztw {
+    @extend .panel;
+  }
+
+  #join-ttrss {
+    @extend .panel;
+  }
+}
+
 footer {
   background-color: #4A4A4A; 
 }

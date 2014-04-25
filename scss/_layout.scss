@@ -5,8 +5,13 @@
   padding-bottom: 2rem;
   padding-left: 8%;
   padding-right: 8%;
-
 }
+@mixin box-wapper-content() {
+  h2~* {
+    @extend .row;
+  }
+}
+
 
 html, body {
   padding: 0;
@@ -31,35 +36,52 @@ header {
 
 section {
   @include box-wapper();
-
-  h2~* {
-    @extend .row;
-  }
 }
 
 #skill {
-  /*div:nth-child(1):before {
+  div:nth-last-child(3):before {
     @extend .row;
   }
 
   div:nth-last-child(3) {
-    @extend .large-5;
+    @extend .large-6;
+    @extend .columns;
   }
 
   div:nth-last-child(-n+2) {
-    @extend .large-2;
-  }*/
+    @extend .large-5;
+    @extend .large-offset-1;
+    @extend .columns;
+  }
+}
+
+#join {
+  #join-moztw:before {
+    @extend .row;
+  }
+  #join-moztw {
+    @extend .large-7;
+    @extend .columns;
+  }
+
+  #join-ttrss {
+    @extend .large-4;
+    @extend .large-offset-1;
+    @extend .columns;
+  }
 }
 
 footer {
   @include box-wapper();
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
   .col:nth-child(1):before {
     @extend .row;
   }
 
   .col {
-    @extend .large-4;
+    @extend .large-6;
     @extend .columns;
   }
 }
