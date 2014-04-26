@@ -18,13 +18,21 @@ h2 {
 
 header {
   h1 {
-    text-align: center;
     font-size: 4.6em;
   }
   h1 .name-en {
     font-size: 0.7em;
     font-style: italic;
     color: gray;
+  }
+
+  @media #{$small-only} {
+    h1 {
+      font-size: 3.6em;
+    }
+    h1 .name-en {
+      font-size: 0.4em;
+    }
   }
 
   #contact-list {
