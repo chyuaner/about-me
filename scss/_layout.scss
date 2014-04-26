@@ -21,24 +21,6 @@ html, body {
 header {
   @include box-wapper();
 
-  #me-simple {
-    margin-bottom: 3rem;
-    text-align: center;
-    margin-bottom: 1rem;
-
-    @media #{$medium-up} {
-      margin: 0px auto;
-      margin-bottom: 8rem;
-      width: 38em;
-      img, h1 {
-        float: left;
-      }
-      img {
-        margin-right: 1em;
-      }
-    }
-  }
-
   #contact-list {
     overflow: hidden;
     // Mobile Width
@@ -139,6 +121,29 @@ section {
   div {
     @extend .large-6;
     @extend .columns;
+  }
+}
+
+#works {
+  ul {
+    @include block-grid(1);
+    @media #{$large-up} {
+      @include block-grid(3);
+    }
+    
+    img {
+      max-height: 20em;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      @media #{$large-up} {
+        max-height: 10em;
+      }
+    }
+  }
+
+  div {
+    @extend .panel;
   }
 }
 

@@ -1,6 +1,24 @@
 header {
   background-color: #FFEAE5;
 
+  #me-simple {
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    @media #{$medium-up} {
+      margin: 0px auto;
+      margin-bottom: 8rem;
+      width: 38em;
+      img, h1 {
+        float: left;
+      }
+      img {
+        margin-right: 1em;
+      }
+    }
+  }
+  
   #contact-list {
     background-color: rgba(255, 255, 255, 0.4);
     padding: 2em;
