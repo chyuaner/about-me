@@ -20,7 +20,27 @@ html, body {
 header {
   @include box-wapper();
 
+  h1 {
+    margin-bottom: 3rem;
+  }
+
   #contact-list {
+    overflow: hidden;
+    width: 50em;
+    // TODO Mobile Width
+    @extend .row;
+    
+    #contact-list-my {
+      @extend .large-5;
+      @extend .columns;
+    }
+    #contact-list-account {
+      @extend .large-4;
+      @extend .columns;
+    }
+
+  }
+  /*#contact-list {
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
@@ -31,7 +51,7 @@ header {
       -moz-column-count: 2;
       -moz-column-gap: 20px;
     }
-  }
+  }*/
 }
 
 section {

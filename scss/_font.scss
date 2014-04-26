@@ -28,8 +28,6 @@ header {
   }
 
   #contact-list {
-    width: 55em; 
-
     .contact-tel::before { content: "Tel: "; }
     .contact-email::before { content: "Email: "; }
     .contact-website::before { content: "Website: "; }
