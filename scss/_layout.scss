@@ -58,18 +58,6 @@ header {
     }
 
   }
-  /*#contact-list {
-    margin-top: 3em;
-    margin-left: auto;
-    margin-right: auto;
-
-    ul {
-      column-count: 2;
-      column-gap: 20px;
-      -moz-column-count: 2;
-      -moz-column-gap: 20px;
-    }
-  }*/
 }
 
 section {
@@ -106,6 +94,50 @@ section {
   #join-ttrss {
     @extend .large-4;
     @extend .large-offset-1;
+    @extend .columns;
+  }
+  // ---
+
+}
+#join-moztw-err451 div {
+  @extend .row;
+  img {
+    @extend .large-6;
+    @extend .columns;
+  }
+  div {
+    @extend .large-6;
+    @extend .columns;
+  }
+}
+#join-moztw-assets div {
+  @extend .row;
+  
+  img:nth-child(2) {
+    @extend .large-6;
+    @extend .columns;
+  }
+  div {
+    @extend .large-6;
+    @extend .columns;
+  }
+}
+#join-moztw-thunderbird div {
+  @extend .row;
+  
+  img {
+    @extend .large-6;
+    @extend .columns;
+  }
+}
+#join-moztw-lab-in_hs div {
+  @extend .row;
+  img {
+    @extend .large-6;
+    @extend .columns;
+  }
+  div {
+    @extend .large-6;
     @extend .columns;
   }
 }

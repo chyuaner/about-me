@@ -16,6 +16,7 @@
 
 <body>
 
+  <!-- 個人簡歷 -->
   <header>
     <div id="me-simple">
       <img class="avatar" src="http://www.gravatar.com/avatar/19460c7d200c042b0305ddc0f662a286.png" />
@@ -36,8 +37,9 @@
         <li class="contact-skype"><a href="skype:yuan817_tw">yuan817_tw</a>
       </ul>
     </div>
-  </header>
+  </header> <!-- End 個人簡歷 -->
 
+  <!-- 主要興趣/專長 -->
   <section id="skill">
     <h2>主要興趣/專長</h2>
     <!-- <p>領域較為廣泛，以Open Source為主。</p> -->
@@ -59,7 +61,6 @@
         </ul>
       </ul>
     </div>
-
     <div id="skill-mobile_app">
       <h4>客戶端應用程式開發</h4>
       <ul>
@@ -80,19 +81,74 @@
         <li>Debian (Server使用的)
       </ul>
     </div>
-  </section>
+  </section> <!-- End 主要興趣/專長 -->
 
+  <!-- 參與過的專案 -->
   <section id="join">
     <h2>參與過的專案</h2>
 
     <div id="join-moztw">
       <h3>Mozilla 台灣社群</h3>
       <ul>
-        <li>Error 451 網路全黑日Blackout
-        <li>assets新版模組
-        <li>thunderbird新版網頁
-        <li>MozTW Lab in Hsinchu 活動訊息
+        <li><a href="#" data-reveal-id="join-moztw-err451">Error 451 網路全黑日Blackout</a>
+          <div id="join-moztw-err451" class="reveal-modal" data-reveal>
+            <div>
+              <img src="images/Blackout-Error451.png" />
+              <div>
+                <h2>Error 451 網路全黑日Blackout</h2>
+                <p>響應2013網路全黑日活動，可在自己的網站上加入MozTW所提供的語法，套入我們所做的黑畫面。</p>
+                <a class="button" href="http://moztw.org/events/blackout/">MozTW上的活動頁面</a>
+                <a class="button" href="https://github.com/chyuaner/TW-Error451-Blackout">在我的Github上的專案</a>
+                <a class="button" href="https://github.com/moztw/TW-Error451-Blackout">MozTW的Github上的專案(修正版)</a>
+              </div>
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+
+          <li><a href="#" data-reveal-id="join-moztw-assets">assets新版模組(未上線)</a>
+          <div id="join-moztw-assets" class="reveal-modal" data-reveal>
+            <div>
+              <img src="images/MozTW-translate-header.png" />
+              <img src="images/MozTW-assets-github.png" />
+              <div>
+                <h2>assets新版模組(未上線)</h2>
+                <p>套上Mozilla新版<a href="http://www.mozilla.org/en-US/styleguide/websites/sandstone/">Sandstone</a>風格的Header</p>
+                <a class="button" href="https://github.com/moztw/assets">Github上的專案</a>
+                <a class="button" href="https://github.com/moztw/assets/commits/master">Github上Commit紀錄</a>
+              </div>
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+
+          <li><a href="#" data-reveal-id="join-moztw-thunderbird">Thunderbird新版網頁(未上線)</a>
+          <div id="join-moztw-thunderbird" class="reveal-modal" data-reveal>
+            <div>
+              <img src="images/MozTW-Thunderbird-new.png" />
+              <img src="images/MozTW-Thunderbird-new-github.png" />
+              <div>
+                <h2>Thunderbird新版網頁(未上線)</h2>
+                <p>套上Mozilla新版<a href="http://www.mozilla.org/en-US/styleguide/websites/sandstone/">Sandstone</a>風格的Header</p>
+                <a class="button" href="https://github.com/moztw/www.moztw.org/tree/master/thunderbird">Github上的專案</a>
+                <a class="button" href="https://github.com/moztw/www.moztw.org/commits/master/thunderbird">Github上Commit紀錄</a>
+              </div>
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+
+          <li><a href="#" data-reveal-id="join-moztw-lab-in_hs">MozTW Lab in Hsinchu 活動訊息</a>
+          <div id="join-moztw-lab-in_hs" class="reveal-modal" data-reveal>
+            <div>
+              <img src="images/MozTW-lab-page.png" />
+              <div>
+                <h2>MozTW Lab in Hsinchu <br />活動訊息</h2>
+                <p>偏內容修改</p>
+                <a class="button" href="http://moztw.org/events/moztw-lab/">活動頁面</a>
+              </div>
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
       </ul>
+
     </div>
 
     <div id="join-ttrss">
@@ -100,7 +156,7 @@
       <p>繁體中文化翻譯，以簡體為基礎，再針對台灣慣用的詞來改。</p>
       <a class="button" href="https://github.com/gothfox/Tiny-Tiny-RSS/pull/347">之前丟的Pull Request</a>
     </div>
-  </section>
+  </section> <!-- End 參與過的專案 -->
 
   <section id="works">
     <h2>做過的個人作品</h2>
