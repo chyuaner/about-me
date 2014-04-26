@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/chyuaner/about-me",
   "devDependencies": {
-    "grunt": "^0.4.4",
-    "grunt-contrib-connect": "^0.7.1",
-    "grunt-contrib-sass": "^0.7.3",
-    "grunt-contrib-watch": "^0.6.1"
+    "node-sass": "~0.7.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sass": "~0.8.0"
   }
 }
