@@ -36,6 +36,29 @@ section:nth-child(odd) {
 }
 
 #skill {
+  div:nth-child(1):before {
+    @extend .row;
+  }
+
+  #skill-web_app {
+    @extend .large-6;
+    @extend .columns;
+  }
+
+  #skill-mobile_app, #skill-used_software {
+    @extend .large-5;
+    @extend .large-offset-1;
+    @extend .columns;
+  }
+  #skill-feature {
+    @extend .medium-12;
+    @extend .columns;
+
+    ul {
+      li:nth-child(odd) { @extend .large-6; @extend .columns; }
+      li:nth-child(even) { @extend .large-5; @extend .large-offset-1; @extend .columns; }
+    }
+  }
 }
 
 #join {
@@ -45,6 +68,33 @@ section:nth-child(odd) {
 
   #join-ttrss {
     @extend .panel;
+  }
+}
+
+#experience {
+  ul {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-left: 5px dotted #E8700C;
+    margin: 0 auto;
+    width: 15em;
+
+    li {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      list-style: none outside none;
+
+      &:before {
+        background-color: #FFFF00;
+        border: 3px solid #E8700C;
+        border-radius: 50%;
+        content: "";
+        font-size: 0.6em;
+        margin-left: -0.95em;
+        margin-right: 1em;
+        padding-left: 0.6em;
+        padding-right: 0.6em;      }
+    }
   }
 }
 

@@ -38,30 +38,11 @@ header {
       @extend .medium-4;
       @extend .columns;
     }
-
   }
 }
 
 section {
   @include box-wapper();
-}
-
-#skill {
-  div:nth-last-child(3):before {
-    @extend .row;
-  }
-
-  div:nth-last-child(3) {
-    @extend .large-6;
-    @extend .columns;
-  }
-
-  div:nth-last-child(-n+2) {
-    @extend .large-5;
-    @extend .large-offset-1;
-    @extend .medium-6;
-    @extend .columns;
-  }
 }
 
 #join {
