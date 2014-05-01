@@ -38,29 +38,11 @@ header {
       @extend .medium-4;
       @extend .columns;
     }
-
   }
 }
 
 section {
   @include box-wapper();
-}
-
-#skill {
-  div:nth-child(1):before {
-    @extend .row;
-  }
-
-  #skill-web_app {
-    @extend .large-6;
-    @extend .columns;
-  }
-
-  #skill-mobile_app, #skill-used_software {
-    @extend .large-5;
-    @extend .large-offset-1;
-    @extend .columns;
-  }
 }
 
 #join {

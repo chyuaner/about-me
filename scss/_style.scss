@@ -36,6 +36,29 @@ section:nth-child(odd) {
 }
 
 #skill {
+  div:nth-child(1):before {
+    @extend .row;
+  }
+
+  #skill-web_app {
+    @extend .large-6;
+    @extend .columns;
+  }
+
+  #skill-mobile_app, #skill-used_software {
+    @extend .large-5;
+    @extend .large-offset-1;
+    @extend .columns;
+  }
+  #skill-feature {
+    @extend .medium-12;
+    @extend .columns;
+
+    ul {
+      li:nth-child(odd) { @extend .large-6; @extend .columns; }
+      li:nth-child(even) { @extend .large-5; @extend .large-offset-1; @extend .columns; }
+    }
+  }
 }
 
 #join {
