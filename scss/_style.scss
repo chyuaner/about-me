@@ -48,6 +48,33 @@ section:nth-child(odd) {
   }
 }
 
+#experience {
+  ul {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-left: 5px dotted #E8700C;
+    margin: 0 auto;
+    width: 15em;
+
+    li {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      list-style: none outside none;
+
+      &:before {
+        background-color: #FFFF00;
+        border: 3px solid #E8700C;
+        border-radius: 50%;
+        content: "";
+        font-size: 0.6em;
+        margin-left: -0.95em;
+        margin-right: 1em;
+        padding-left: 0.6em;
+        padding-right: 0.6em;      }
+    }
+  }
+}
+
 footer {
   background-color: #4A4A4A; 
 }
