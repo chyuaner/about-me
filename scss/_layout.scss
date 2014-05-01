@@ -47,19 +47,18 @@ section {
 }
 
 #skill {
-  div:nth-last-child(3):before {
+  div:nth-child(1):before {
     @extend .row;
   }
 
-  div:nth-last-child(3) {
+  #skill-web_app {
     @extend .large-6;
     @extend .columns;
   }
 
-  div:nth-last-child(-n+2) {
+  #skill-mobile_app, #skill-used_software {
     @extend .large-5;
     @extend .large-offset-1;
-    @extend .medium-6;
     @extend .columns;
   }
 }
