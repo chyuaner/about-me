@@ -72,6 +72,12 @@ section:nth-child(odd) {
 }
 
 #education {
+  h3 {
+    font-size: 1.3em;
+  }
+  h4 {
+    font-size: 1em;
+  }
   li {
     @extend .large-6;
     @extend .columns;
