@@ -79,6 +79,7 @@ section:nth-child(odd) {
     font-size: 1em;
   }
   li {
+    list-style: none outside none;
     @extend .large-6;
     @extend .columns;
   }
