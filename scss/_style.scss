@@ -71,6 +71,20 @@ section:nth-child(odd) {
   }
 }
 
+#education {
+  h3 {
+    font-size: 1.3em;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  li {
+    list-style: none outside none;
+    @extend .large-6;
+    @extend .columns;
+  }
+}
+
 #experience {
   ul {
     padding-top: 1rem;
