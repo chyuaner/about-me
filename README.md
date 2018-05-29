@@ -19,7 +19,7 @@ You'll need to have the following items installed before continuing.
 ### Quickstart
 
 ```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
+npm install -g grunt-cli bower
 npm install && bower install
 ```
 
@@ -33,5 +33,3 @@ And you're set!
 
   * `scss/_settings.scss`: Foundation configuration settings go in here
   * `scss/app.scss`: Application styles go here
-
-
